@@ -56,6 +56,7 @@ function closeMenu () {
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
+  padding: 0 16px;
 }
 .menu__logo {
   position: relative;

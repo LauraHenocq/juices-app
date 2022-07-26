@@ -27,7 +27,7 @@
 .title::after {
   position: absolute;
   bottom: -10px;
-  right: 150px;
+  right: 40px;
   width: 30%;
   height: 60px;
   display: inline-block;
@@ -42,12 +42,12 @@
 
 @keyframes slideinleft {
   from {
-    left: -200px;
+    left: -250px;
   }
 }
 @keyframes slideinright {
   from {
-    right: -200px;
+    right: -250px;
   }
 }
 
@@ -55,11 +55,14 @@
   .title {
     padding: 24px 12px;
     margin: 45px 0;
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .title::after {
     bottom: -40px;
+    right: 150px;
+    width: 20%;
+    height: 40px;
   }
 }
 
