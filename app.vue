@@ -15,11 +15,10 @@ const menuToDisplay: Array = useState('menu', () => [
 ])
 </script>
 <template>
-  <div class="homepage container">
+  <div>
     <CommonMenu :menu="menuToDisplay" />
-    <CommonTitle>
-      Mes recettes de jus
-    </CommonTitle>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/regime" title="régime icônes">Régime icônes créées par Freepik - Flaticon</a>
+    <div class="container">
+      <NuxtPage />
+    </div>
   </div>
 </template>
