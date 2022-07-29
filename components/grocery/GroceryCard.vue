@@ -58,6 +58,7 @@ const months = computed((): Array<number> => {
 </template>
 <style scoped lang="scss">
 .grocery-card {
+  position: relative;
   display: grid;
   grid-template-columns: 5fr 4fr;
   grid-template-rows: auto auto 1fr;
@@ -75,6 +76,19 @@ const months = computed((): Array<number> => {
     'type local'
     'content content';
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.grocery-card::before {
+  position: absolute;
+  content: '';
+  top: -8px;
+  left: 8px;
+  border: 1px solid $tertiary;
+  border-radius: $radius;
+  opacity: 0.7;
+  height: 100%;
+  width: 100%;
+  background-position: bottom;
 }
 .grocery-card__picture {
   grid-area: picture;
