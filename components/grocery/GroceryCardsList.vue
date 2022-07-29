@@ -16,11 +16,11 @@ const props = defineProps({
   }
 })
 
-const useGroceryList = () => useState<Grocery>('groceryList', () => props.groceryList)
-const itemsToDisplay = useGroceryList()
+const itemsToDisplay = ref(props.groceryList)
 </script>
 <style lang="scss" scoped>
 .grocery-cards-list {
+  margin-top: 80px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: 80px;
